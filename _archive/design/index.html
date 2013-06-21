@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta />
+    <title>
+      UM-Dearborn Redesign Templates
+    </title>
+    <style type="text/css">
+/*<![CDATA[*/
+      @font-face {
+        font-family: 'Pictos';
+        src: url('status-fonts/pictos-web.eot');
+        src: local('?'), url('status-fonts/pictos-web.woff') format('woff'), url('status-fonts/pictos-web.ttf') format('truetype'), url('status-fonts/pictos-web.svg#webfontIyfZbseF') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      @font-face {
+          font-family: 'BodoniRegular';
+          src: url('status-fonts/bodoni-openamp.eot');
+          src: url('status-fonts/bodoni-openamp.eot?iefix') format('eot'),
+               url('status-fonts/bodoni-openamp.woff') format('woff'),
+               url('status-fonts/bodoni-openamp.ttf') format('truetype'),
+               url('status-fonts/bodoni-openamp.svg#webfonthPx7eFJu') format('svg');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        font: normal normal normal 1em/1.5 "Helvetica Neue", Helvetica, serif;
+        font-weight:300;
+        color: #999;
+        background-color:#333;
+      }
+      
+      a { color: #004684; font-weight: bold; text-decoration: none; white-space: nowrap; }
+      a:hover { color: #0069c6; text-decoration:underline; }
+      
+      .pictos { font-family: Pictos; }
+      td .pictos, .status .pictos { margin: 0 0.4em 0 0; }
+      .check { font-family: Pictos; color: #55a157; }
+      
+      .done { background-color: #55a157; white-space: nowrap; font-style: normal; }
+      .ready { color: #55a157; white-space: nowrap; }
+      .in-progress { background-color: #f79932; color: #dc9918; white-space: nowrap; }
+      .waiting { background-color: #bd4316; color: #aaa; white-space: nowrap; }
+      .qa { color: #d172ce; white-space: nowrap; }
+      
+      .page {
+        width: 48em;
+        margin: 0 auto;
+        padding: 1em 2em;
+        background-color:#f7f5ed;
+      }
+      
+      h1 {
+        font-family: "franklin-gothic-urw-comp",sans-serif;
+        text-transform: uppercase;
+        font-size: 5em;
+        font-weight:400;
+        padding: 0 15px 0.25em;
+        margin: 0.6em -32px 0;
+        line-height:0.8em;
+        text-align: center;
+        color: #036;
+      }
+      
+      h2 {
+        color: #333;
+        font-family:"adobe-garamond-pro",Georgia, serif;
+        font-weight:400;
+        text-align: center;
+        padding: 0 14px 1em;
+        margin: 0;
+        line-height: 1em;
+        border-bottom: 3px double #555;
+        font-size:3em;
+        
+      }
+      
+      fieldset {
+        border: none;
+        border: 1px solid #ccc;
+        margin: 2.5em -24px 1em;
+        padding: 0;
+        background-color:#fff;
+        -moz-box-shadow: 2px 2px 3px #bbb;
+        -webkit-box-shadow: 2px 3px 2px #bbb;
+        box-shadow: 2px 2px 3px #bbb;
+      }
+      
+        fieldset legend {
+          padding: 0 8px;
+          font-size: 1.1em;
+          margin-left: 16px;
+          background-color:#036;
+          border:1px solid #ccc;
+          color:#fff;
+        }
+        
+        fieldset legend small {
+          margin-left: 1em;
+        }
+        
+      fieldset table {
+        margin: 1em 16px;
+        width: 94%;
+        border-collapse: collapse;
+      }
+      
+        th {
+          text-align: left;
+          text-transform: uppercase;
+          font-size: 0.75em;
+          letter-spacing: 2px;
+          border-bottom: 1px solid #ddd;
+          color: #777;
+          background-color: #eee;
+          padding: 2px 8px 0;
+          font-weight: normal;
+        }
+        
+        td {
+          padding: 0.6em 8px 0.5em;
+          border-bottom: 1px solid #ddd;
+          vertical-align: middle;
+        }
+        
+        td:first-child { font-weight: bold; color: #333;}
+        td:first-child small { font-weight: normal; display: block; font-style: italic; color: #999; }
+        
+        .template { width: 50%; }
+        .mockup { width: 30%; }
+        .buildout { width: 20%; }
+        
+      fieldset p {
+        margin: 1em 24px 0;
+        font-style: italic;
+      }
+      
+      .intro {
+        font-size: 1.4em;
+        color: #888;
+        font-style: italic;
+      }
+      
+        .intro strong { font-weight: normal; color: #555; text-shadow: 0 2px 3px rgba(0,0,0,0.2); }
+      
+      span.status {
+        padding: 6px 12px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        color: #fff;
+      }
+      
+      .ampersand {
+        font-family: BodoniRegular, Georgia, "Times New Roman", serif;
+        font-size: 1.4em;
+        vertical-align: -0.15em;
+        color: #444;
+      }
+    /*]]>*/
+    </style>
+    <script type="text/javascript" src="http://use.typekit.com/bcd7pmf.js">
+</script>
+    <script type="text/javascript">
+//<![CDATA[
+    try{Typekit.load();}catch(e){}
+    ///* ]]> */
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <h1>
+        UM-Dearborn
+      </h1>
+      <h2>
+        Web Redesign
+      </h2>
+      <fieldset>
+        <legend style="background-color:#036;">Approved Mockups</legend>
+        <table>
+          <thead>
+            <tr>
+              <th class="template">
+                Page Name
+              </th>
+              <th class="mockup">
+                Mockup
+              </th>
+              <th class="buildout">
+                Buildout
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Homepage
+              </td>
+              <td>
+                <a href="http://dearborn.babywhale.net/images/Dearborn-Homepage-Feb8.jpg" target="_blank"><img src="http://dearborn.babywhale.net/images/Dearborn-Homepage-Feb8.jpg" alt="Design mockup" width="150" /></a>
+              </td>
+              <td>
+                Buildout
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend style="background-color:#036;">Coming Up Next</legend>
+        <table>
+          <thead>
+            <tr>
+              <th class="template">
+                Page Name
+              </th>
+              <th class="mockup">
+                Mockup
+              </th>
+              <th class="buildout">
+                Buildout
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Top-Level Landing Page (Academics)
+              </td>
+              <td>
+                <a href="http://dearborn.babywhale.net/images/academics-landing-page.jpg" target="_blank"><img src="http://dearborn.babywhale.net/images/academics-landing-page.jpg" alt="Design mockup" width="150" /></a>
+              </td>
+              <td>
+                #
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Top-Level Landing Page (Admissions)
+              </td>
+              <td>
+                <a href="http://dearborn.babywhale.net/images/admissions-landing-page.jpg" target="_blank"><img src="http://dearborn.babywhale.net/images/admissions-landing-page.jpg" alt="Design mockup" width="150" /></a>
+              </td>
+              <td>
+                #
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Basic Content Page
+              </td>
+              <td>
+                <a href="http://dearborn.babywhale.net/images/inside-page-porthole-profiles.jpg" target="_blank"><img src="http://dearborn.babywhale.net/images/inside-page-porthole-profiles.jpg" alt="Design mockup" width="150" /></a>
+              </td>
+              <td>
+              #
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Academic Department Homepages
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+                #
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                Audience Gateway Page
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+                #
+              </td>
+            </tr>
+                 
+            <tr>
+              <td>
+                News Story
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+               #
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Blog Page
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+               #
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                Profile Page
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+               #
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                Student Organization Page
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+               #
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                Crisis Page
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+               #
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                Library
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+               #
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Event Detail
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+               #
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                Extracurriculars
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+               #
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </fieldset>
+          <fieldset>
+        <legend style="background-color:#036;">And also!</legend>
+        <table>
+          <thead>
+            <tr>
+              <th class="template">
+                Name
+              </th>
+              <th class="mockup">
+                Mockup
+              </th>
+              <th class="buildout">
+                Buildout
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Library of flexible design elements
+              </td>
+              <td>
+                <a href="http://dearborn.babywhale.net/images/modular-blocks.jpg" target="_blank"><img src="http://dearborn.babywhale.net/images/modular-blocks.jpg" alt="Design mockup" width="150" /></a>
+              </td>
+              <td>
+                #
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Wrappers and headers for third-party applications
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+                #
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Web Style Guide
+              </td>
+              <td>
+                #
+              </td>
+              <td>
+                #
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </div>
+  </body>
+</html>

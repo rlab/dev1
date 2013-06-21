@@ -1,0 +1,510 @@
+/********************************************************************
+*** GOLBALS
+*********************************************************************/
+.element{
+	
+	clear: both;
+	
+	header{
+	
+		background: #ccc;
+		padding: 10px;
+		
+		h2{
+			margin: 0;
+			text-align: center;
+			color: @white;
+			font-weight: 900;
+		}
+	}
+	
+	.wrap{
+		padding: 40px 0;
+	}
+	
+}
+@media only screen and (min-width: 480px) {
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+
+}
+
+@media only screen and (min-width: 1064px) {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/********************************************************************
+*** ADDRESS BLOCK
+*********************************************************************/
+.addressblock{
+	
+	width: 270px;
+	
+	h5{
+		margin: 0;
+		padding: 0 6px;
+		font-size: 16px;
+		color: #242833;
+	}
+	span.title{
+		padding: 0 6px;
+		font-style: italic;
+		font-size: 15px;
+		font-weight: 300;
+	}
+	ul{
+		
+		margin: 18px 0;
+		padding: 0;
+		list-style: none;
+		
+		li{
+			
+			border-top: dotted 1px #8299ac;
+			padding: 6px;
+			overflow: hidden;
+			font-size: 14px;
+			font-weight: 300;
+			
+			&:last-child{
+				border-bottom: dotted 1px #8299ac;
+			}
+			&:hover{
+				background: #e5eaef;
+				.icon{
+					background-position-y: -30px;
+				}
+			}
+			
+			.icon{
+			
+				width: 30px;
+				height: 30px;
+				background: #06335a url('../design_elements/_img/address_block_sprite.png') 0 0 no-repeat;
+				float: left;
+				margin-right: 10px;
+				
+				img{
+					
+				}
+			}
+			p{
+				float: left;
+				margin: 5px 0 0 0;
+				padding: 0;
+			}
+			a{
+				
+			}
+			
+			iframe{
+				width: 100%;
+				height: 160px;
+				margin: 6px 0 0 0;
+			}
+			
+		}
+		li.address{
+			font-size: 12px;
+			.icon{
+				background-position-x: 0;
+			}
+			p{
+				margin: 0;
+			}
+		}
+		li.phone{
+			.icon{
+				background-position-x: -30px;
+			}
+		}
+		li.email{
+			.icon{
+				background-position-x: -90px;
+			}
+		}
+		li.link{
+			.icon{
+				background-position-x: -60px;
+			}
+		}
+		
+	}
+	
+}
+
+@media only screen and (min-width: 480px) {
+
+.addressblock{
+	
+	width: 430px;
+	
+	h5{
+		
+	}
+	span.title{
+		
+	}
+	ul{
+		
+		li{
+			
+			img{
+				
+			}
+			p{
+				
+			}
+			a{
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+.addressblock{
+	
+	width: 354px;
+	
+	h5{
+		
+	}
+	span.title{
+		
+	}
+	ul{
+		
+		li{
+			
+			img{
+				
+			}
+			p{
+				
+			}
+			a{
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+}
+
+@media only screen and (min-width: 1064px) {
+
+.addressblock{
+	
+	width: 226px;
+	
+	h5{
+		
+	}
+	span.title{
+		
+	}
+	ul{
+		
+		li{
+			
+			img{
+				
+			}
+			p{
+				
+			}
+			a{
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+}
+
+
+
+
+
+
+/********************************************************************
+*** BOLD TOPICS
+*********************************************************************/
+
+
+/********************************************************************
+*** EMERGENCY TICKER
+*********************************************************************/
+.element{
+	
+	.banner_notice{
+		
+		.wrap{
+			padding: 8px 0 8px 40px;
+		}
+		
+	}
+	
+}
+
+
+/********************************************************************
+*** COMMENTS
+*********************************************************************/
+.comments{
+	
+	.comments_header{
+		
+		padding: 0 0 30px 0;
+		margin: 0 0 30px 0;
+		border-bottom: solid 1px #dedede;
+		
+		h3{
+			color: #696666;
+			margin: 0;
+		}
+		
+	}
+	
+	.comment_list{
+		
+		.comment_wrap{
+			
+			overflow: hidden;
+			
+			img.comment_avatar{
+			
+				float: left;
+				display: block;
+				width: 56px;
+				height: 56px;
+				margin-right: 16px;
+				
+			}
+			.comment{
+			
+				float: left;
+				width: 412px;
+				margin: 0 0 30px 0;
+				padding: 0 0 30px 0;
+				border-bottom: solid 1px #dedede;
+				
+				.comment_header{
+					
+					margin-bottom: 6px;
+					font-weight: 300;
+					font-size: 14px;
+					
+					a{
+						text-decoration: underline;
+					}
+					
+				}
+				.comment_text{
+					
+					font-family: @book_antiqua;
+					color: #3a3537;
+					font-size: 14px;
+					
+					p{
+						line-height: 22px;
+						margin: 0;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+/********************************************************************
+*** Headers
+*********************************************************************/
+.headers{
+	
+	table{
+		tbody{
+			tr{
+				td.tag{
+					font-family: @roboto_condensed;
+					font-size: 15px;
+					color: @tan;
+					text-transform: uppercase;
+					border-right: solid 1px @tan;
+					padding: 20px 20px 20px 0;
+				}
+				td{
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+	
+}
+
+
+/********************************************************************
+*** LARGE LISTS
+*********************************************************************/
+.large_list{
+	
+	ul{
+		
+		padding: 0;
+		margin: 0;
+		
+		li{
+			list-style: none;
+		}
+		
+	}
+	
+	ul.options{
+		
+		overflow: hidden;
+		margin: 0 0 30px 0;
+		padding: 0 0 40px 0;
+		border-bottom: solid 1px @tan;
+		
+		li{
+			
+			display: block;
+			color: #4f5a55;
+			float: left;
+				width: 3.84615%;
+			
+			a, span.nolink{
+				
+				color: @link;
+				display: block;
+				padding: 2px 0;
+				text-align: center;
+				
+			}
+			span.nolink{
+				line-height: 1.5em;
+			}
+			
+			a:hover{
+				background: @link;
+				color: @gold;
+				text-decoration: none;
+			}
+			
+		}
+		
+	}
+	
+	ul.results{
+		
+		li{
+			
+			margin: 0 0 20px 0;
+			font-weight: 300;
+			
+			strong{
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+
+/********************************************************************
+*** TABULAR DATA
+*********************************************************************/
+.tabular_data{
+	
+	table{
+		
+		width: 100%;
+		
+		thead{
+			
+			tr{
+				
+				th{
+					color: @black;
+					font-weight: normal;
+					border-top: solid 2px @link;
+					border-bottom: solid 1px @link;
+					border-spacing:2px;
+					padding: 10px;
+				}
+				
+			}
+			
+		}
+		
+		tbody{
+			
+			tr{
+				
+				td{
+					
+					background: #ebecf0;
+					color: @link;  
+					padding: 10px;   
+					margin: 10px 0;
+					border-collapse: separate;
+					border: solid 2px #fff;
+				}
+				
+			}
+			tr:hover td{
+				background: @white;
+				color: @black;
+				border-bottom: dotted 1px @black;
+				border-top: dotted 1px @black;
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+
+
